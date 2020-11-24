@@ -14,6 +14,7 @@
 		041F0924256BC1EA003040E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041F0923256BC1EA003040E7 /* Assets.xcassets */; };
 		041F0927256BC1EA003040E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F0925256BC1EA003040E7 /* LaunchScreen.storyboard */; };
 		041F093E256BC444003040E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041F093D256BC444003040E7 /* GoogleService-Info.plist */; };
+		046A97D7256CBF3500012B4A /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A97D6256CBF3500012B4A /* secondViewController.swift */; };
 		78B486BDC15D053455C48762 /* Pods_google_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B7E56CDFB67C200F00D2D8 /* Pods_google_login.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		041F0926256BC1EA003040E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041F0928256BC1EA003040E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041F093D256BC444003040E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		046A97D6256CBF3500012B4A /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		3C23144BDCD9A15000F791DE /* Pods-google login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google login.debug.xcconfig"; path = "Target Support Files/Pods-google login/Pods-google login.debug.xcconfig"; sourceTree = "<group>"; };
 		41187C97BE38F733DF9F0932 /* Pods-google login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google login.release.xcconfig"; path = "Target Support Files/Pods-google login/Pods-google login.release.xcconfig"; sourceTree = "<group>"; };
 		42B7E56CDFB67C200F00D2D8 /* Pods_google_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 				041F0925256BC1EA003040E7 /* LaunchScreen.storyboard */,
 				041F093D256BC444003040E7 /* GoogleService-Info.plist */,
 				041F0928256BC1EA003040E7 /* Info.plist */,
+				046A97D6256CBF3500012B4A /* secondViewController.swift */,
 			);
 			path = "google login";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046A97D7256CBF3500012B4A /* secondViewController.swift in Sources */,
 				041F091F256BC1E5003040E7 /* ViewController.swift in Sources */,
 				041F091B256BC1E5003040E7 /* AppDelegate.swift in Sources */,
 				041F091D256BC1E5003040E7 /* SceneDelegate.swift in Sources */,

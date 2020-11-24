@@ -10,7 +10,9 @@ import Firebase
 import GoogleSignIn
 
 class ViewController: UIViewController,GIDSignInDelegate {
-
+var name = ""
+var email = ""
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,16 +38,33 @@ class ViewController: UIViewController,GIDSignInDelegate {
             if let error = error {
                 print("Firebase Sign in error")
                 print(error)
+            }else {
+                
+                let name = authResult?.user.displayName!
+                
+                 let email = authResult?.user.email!
+                
+                
+                 let photo = authResult?.user.photoURL!
+                
+                
+                
+                print(photo!)
+//                self.l1.text = name
+//                self.l2.text = email
+                print("user is sign in with Firebase")
+          
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let detail:secondViewController = storyboard.instantiateViewController(withIdentifier: "secondViewController") as! secondViewController
+                detail.l11 = name
+                detail.l22 = email
+                detail.l33 = photo
+                self.navigationController?.pushViewController(detail, animated: true)
+              
             }
             
            // print("\(authResult?.user.displayName)")
-            let name = authResult?.user.displayName!
-            
-             let email = authResult?.user.email!
-            print(name!)
-            self.l1.text = name
-            self.l2.text = email
-            print("user is sign in with Firebase")
+           
         }
     }
 
@@ -53,15 +72,15 @@ class ViewController: UIViewController,GIDSignInDelegate {
     @IBOutlet weak var l1: UILabel!
     
     @IBAction func signout(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-    do {
-      try firebaseAuth.signOut()
-        l1.text = ""
-        l2.text = nil
-        self.dismiss(animated: true , completion: nil)
-    } catch let signOutError as NSError {
-      print ("Error signing out: %@", signOutError)
-    }
+//        let firebaseAuth = Auth.auth()
+//    do {
+//      try firebaseAuth.signOut()
+//        l1.text = ""
+//        l2.text = nil
+//        self.dismiss(animated: true , completion: nil)
+//    } catch let signOutError as NSError {
+//      print ("Error signing out: %@", signOutError)
+//    }
       
     }
 }
